@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "www"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "microphone=(self), camera=(self)"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/service-worker.js"
+  [headers.values]
+    Cache-Control = "no-cache"

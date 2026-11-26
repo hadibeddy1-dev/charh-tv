@@ -1,0 +1,14 @@
+node_modules/
+www/
+
+.DS_Store
+
+android/.gradle/
+android/local.properties
+android/app/build/
+android/build/
+
+ios/Pods/
+ios/App/Pods/
+ios/App/App.xcworkspace/xcuserdata/
+ios/App/App.xcodeproj/xcuserdata/

@@ -1,0 +1,21 @@
+{
+  "name": "charh-tv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "charh.tv mobile app",
+  "scripts": {
+    "build": "mkdir -p www && cp index.html styles.css script.js manifest.webmanifest service-worker.js icon.svg www/",
+    "dev": "python3 -m http.server 4173",
+    "cap:sync": "npm run build && npx cap sync",
+    "cap:ios": "npm run cap:sync && npx cap open ios",
+    "cap:android": "npm run cap:sync && npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/core": "^7.4.4",
+    "@capacitor/ios": "^7.4.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.4"
+  }
+}
